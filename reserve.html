@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
@@ -16,20 +15,36 @@
             <li><a href="reserve.html"><strong>Boka</strong></a></li>
         </ul>
     </header>
-
     <main>
         <div class="home-div">
-            <img class="img-home" src="https://cdn.discordapp.com/attachments/500025553915478058/1034801394126946354/116532683500jkzvl6kxuby6215hsnlyxzkyf0gschglvjpp42yd7z7z3p1jb7wpky7ssjhf70ubqwplbfb4dtx8ryul1xdi8eipx4vsgg6qtv9.png" alt="">
-            <div class="text">
-                <h1 class="h1-text fontf">Om restaurangen</h1>
-                <p class="p-text">
-                    Barrels serverar några av Stockholms bästa hamburgare och kedjan har idag tre ställen i Stockholm; Gamla stan, 
-                    Norrmalm (city) och Södermalm. Konceptet är enkelt, men genialt: hemgjorda burgare av högsta kvalitet. 
-                    Ett bevis på restaurangernas framgång är att de har vunnit flera priser för sin mat. 
-                    Hamburgarna är gjorda av endast de bästa ingredienserna och kommer från noggrant utvalda leverantörer. 
-                    Brödet är nybakat och dagsfärskt, köttet uteslutande svenskt. Servicen håller toppklass och stämningen är härlig och avslappnad. 
-                    Vad mer kan man önska sig av en hamburgerrestaurang i Stockholm?
-                </p>
+            <div class="reserve fontp-n">
+                <h2>Booka bord</h2>
+
+                <label for="res-input">Namn och antal personer: </label><br>
+                <input type="text" id="res-input-name" class="res-input-name" placeholder="Namn">
+                <input type="number" id="res-input-amount" class="res-input-amount" placeholder="1">
+                <br>
+
+                <label for="res-input-date">Datum och tid: </label><br>
+                <input type="date" id="res-input-date" placeholder="Datum">
+                <input type="time" id="res-input-time" class="res-input-time" placeholder="Tid">
+                <br>
+
+                <label for="res-input-message">Meddelande: </label><br>
+                <textarea id="res-input-message" cols="30" class="res-input-message" placeholder="Meddelande"></textarea>
+                <br>
+
+                <div class="submit-div">
+                    <input type="button" class="res-input-reset" value="Reset">
+                    <input type="submit" class="res-input-submit" value="Skicka in">
+                </div>
+            </div>
+
+            <div class="map">
+                <div class="fontp-n">
+                    <h2>Här är restaurangen</h2>
+                    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.5546289246417!2d18.055793734887697!3d59.340389200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d688fd62885%3A0x2486e16e044513b8!2zTMOlZGFu!5e0!3m2!1ssv!2sse!4v1666861984342!5m2!1ssv!2sse" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </main>
