@@ -1,3 +1,28 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 99%;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(69, 62, 62); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #342f2f; 
+  }
+
+
+
 body{
     margin: 0;
     background-color: #010100;
@@ -11,6 +36,8 @@ header{
     top: 0;
     width: 100%;
     margin-bottom: 50px;
+    background-color: #000000d8;
+    z-index: 1;
 }
 
 main{
@@ -24,7 +51,7 @@ main{
 footer{
     width: calc(100% - 20px);
     background-color: #131214;
-    position: absolute;
+    position: relative;
     bottom: 0;
     padding: 10px;
     padding-bottom: 40px;
